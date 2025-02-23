@@ -1,0 +1,439 @@
+.lato-regular {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.tinos-regular {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tinos-bold {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tinos-regular-italic {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Tinos";
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(41, 41, 41, 1);
+  margin: 0;
+  cursor: default;
+}
+.wall{
+  background-image: url(/imgs/noise_transparent.png),
+  linear-gradient(to bottom right, rgba(91, 72, 58, 1), rgba(38, 36, 37, 1) );;
+  background-repeat: repeat;
+  background-size: 10%, cover;
+  width: 100%;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+
+
+ /* header start:  */
+
+ .header{
+ height: 128px;
+ }
+
+.header_wrapper{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 62px;
+}
+.logo_description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo{
+  font-size: 37px;
+  color: rgba(241, 205, 179, 1);
+  cursor: pointer;
+}
+.description{
+ font-family: "Lato";
+ color: white;
+}
+.nav_list{
+  display: flex;
+  width: 443px;
+  justify-content: space-between;
+}
+.nav_link{
+  text-decoration: none;
+  color: rgba(205, 205, 205, 1);
+  transition: 0.3s;
+}
+.nav_link:hover{
+  border-bottom: solid  3px rgba(241, 205, 179, 1);
+}
+/* header end */
+
+
+
+
+/* start screen start */
+.start_screen{
+  height: 780px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading_block{
+  height: 322px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: -30px;
+}
+.heading{
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  color: white;
+}
+.subheading{
+  font-family: "Lato";
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  color: rgba(205, 205, 205, 1);
+  line-height: 22px;
+}
+.make_friend{
+  width: 207px;
+  height: 52px;
+  border-radius: 100px;
+  font-family: "Tinos";
+  font-size: 20px;
+  background-color: rgba(241, 205, 179, 1);
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.make_friend:hover{
+  background-color: rgba(253, 220, 196, 1);
+}
+.start_dog{
+  margin-top: 50px;
+}
+
+/* start screen end*/
+
+
+
+
+
+/* about start */
+.about{
+  height: 588px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about_shelter{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 451px;
+  height: 380px;
+  margin-top: -18px;
+  margin-right: 46px;
+}
+.about_name{
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 2.5px;
+}
+.about_text{
+  font-size: 15px;
+  line-height: 160%;
+  letter-spacing: 0.5px;
+}
+.about_pets{
+  margin-left: 54px;
+  margin-bottom: 15px;
+}
+
+/* about end */
+
+
+
+
+
+
+/* pets start */
+.pets{
+  height: 796px;
+  background-color: rgba(246, 246, 246, 1);
+  padding-top: 80px;
+}
+.pets_wrapper{
+  height: 697px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  gap: 60px;
+}
+.pets_name{
+  font-size: 37px;
+  letter-spacing: 2.2px;
+  line-height: 120%;
+  text-indent: 59px;
+}
+.option{
+  height: 435px;
+  width: 270px;
+  background-color: rgba(250, 250, 250, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.pet_name{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.carusel_wrapper{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.carusel{
+ position: relative;
+ width: 83%;
+ overflow: hidden;
+ display: flex;
+ justify-content: space-between;
+ gap: 90px;
+}
+.learn_more{
+  width: 187px;
+  height: 52px;
+  border: solid 2px rgba(241, 205, 179, 1);
+  border-radius: 100px;
+  background: none;
+  font-family: "Tinos";
+  font-size: 20px;
+  transition: 0.3s;
+}
+.option:hover .learn_more{
+  background-color: rgba(241, 205, 179, 1);
+}
+.more_pets{
+  width: 261px;
+  height: 52px;
+  background-color: rgba(241, 205, 179, 1);
+  border-radius: 100px;
+  border: none;
+  font-family: "Tinos";
+  font-size: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more_pets:hover{
+  background-color: rgba(253, 220, 196, 1);
+}
+.arrow{
+  position: absolute;
+  height: 52px;
+  width: 52px;
+  border-radius: 100px;
+  border: 2px solid rgba(241, 205, 179, 1);
+  transition: 0.3s;
+}
+.arrow:hover{
+  background-color: rgba(241, 205, 179, 1);
+}
+.next{
+transform: rotate(180deg);
+right: 0px;
+}
+.back{
+left: 0px;
+}
+/* pets start */
+
+
+
+
+
+/* help start */
+.help{
+  height: 531px;
+  background-color: white;
+  padding-top: 80px;
+}
+ .help_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+ }
+ .help_heading{
+  font-size: 39px;
+  line-height: 115%;
+  letter-spacing: 1px;
+ }
+ .help_list{
+  height: 281px;
+  display: flex;
+  column-gap: 128px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+ }
+ .help_opt{
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+ }
+/* help end */
+
+
+
+
+/* donate start */
+.donation{
+  height: 381px;
+  background-color: rgba(246, 246, 246, 1);
+  padding-top: 81px;
+}
+.donate_wrap{
+  display: flex;
+  justify-content: center;
+  gap: 31px;
+  margin-left: 15px;
+}
+.donate_info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.donate_head{
+  font-size: 35px;
+  letter-spacing: 3px;
+  line-height: 130%;
+}
+.donate_subhead{
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+.card_block{
+  width: 349px;
+  height: 43px;
+  background-color: rgba(241, 205, 179, 1);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card_number{
+  font-size: 20px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.info{
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: rgba(178, 178, 178, 1);
+}
+
+/* donate end */
+
+
+/* footer start */
+.footer{
+  height: 350px;
+}
+.footer_wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+.footer_block{
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 18px;
+
+}
+.block{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 22px;
+}
+.footer_name{
+  font-size: 37px;
+  color: white;
+  letter-spacing: 3px;
+  line-height: 114%;
+}
+.contact, .adress{
+  font-size: 20px;
+  color: rgba(241, 205, 179, 1);
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.block{
+  text-decoration: none;
+}
+/* footer end */

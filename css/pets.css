@@ -1,0 +1,242 @@
+.lato-regular {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.tinos-regular {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tinos-bold {
+  font-family: "Tinos", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tinos-regular-italic {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+html{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "Tinos";
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(41, 41, 41, 1);
+  margin: 0;
+  cursor: default;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+/* header start:  */
+
+.header{
+  height: 121px;
+  }
+ 
+ .header_wrapper{
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   padding-top: 30px;
+ }
+ .logo_description{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-decoration: none;
+ }
+ .logo{
+   font-size: 37px;
+   color: rgba(84, 84, 84, 1);
+   cursor: pointer;
+ }
+ .description{
+  font-family: "Lato";
+  color: rgba(84, 84, 84, 1);
+  margin-top: 8px;
+ }
+ .nav_list{
+   display: flex;
+   width: 443px;
+   justify-content: space-between;
+ }
+ .nav_link{
+   text-decoration: none;
+   color: rgba(84, 84, 84, 1);
+   transition: 0.3s;
+ }
+ .nav_link:hover{
+   border-bottom: solid  3px rgba(241, 205, 179, 1);
+ }
+ /* header end */
+
+
+
+/* all pets start */
+.all_pets{
+  height: 1342px;
+  background-color: rgba(246, 246, 246, 1);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.all_pets_wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.heading{
+  font-size: 40px;
+  letter-spacing: 1.2px;
+  line-height: 110%;
+}
+ .option{
+  height: 435px;
+  width: 270px;
+  background-color: rgba(250, 250, 250, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.pet_name{
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.carusel_wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.carusel{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ row-gap: 30px;
+}
+.learn_more{
+  width: 187px;
+  height: 52px;
+  border: solid 2px rgba(241, 205, 179, 1);
+  border-radius: 100px;
+  background: none;
+  font-family: "Tinos";
+  font-size: 20px;
+  transition: 0.3s;
+}
+.option:hover .learn_more{
+  background-color: rgba(241, 205, 179, 1);
+}
+.arrows_wrapper{
+  display: inline-flex;
+  column-gap: 20px;
+}
+.arrow{
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  border: 2px solid rgba(241, 205, 179, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.arrow:hover{
+  background-color: rgba(241, 205, 179, 1);
+}
+.arrow_disabled img{
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+.back{
+  transform: rotate(180deg);
+}
+.page{
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  background-color: rgba(241, 205, 179, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* all pets end */
+
+
+
+/* footer start */
+.wall{
+  background-image: url(/imgs/noise_transparent.png),
+  linear-gradient(to bottom right, rgba(91, 72, 58, 1), rgba(38, 36, 37, 1) );;
+  background-repeat: repeat;
+  background-size: 10%, cover;
+  width: 100%;
+}
+.footer{
+  height: 350px;
+}
+.footer_wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+.footer_block{
+  height: 234px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 18px;
+
+}
+.block{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 22px;
+}
+.footer_name{
+  font-size: 37px;
+  color: white;
+  letter-spacing: 3px;
+  line-height: 114%;
+}
+.contact, .adress{
+  font-size: 20px;
+  color: rgba(241, 205, 179, 1);
+  letter-spacing: 2px;
+}
+/* footer end */
