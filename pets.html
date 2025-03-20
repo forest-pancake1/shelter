@@ -26,19 +26,20 @@
         <nav class="navigation">
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="index.html" class="nav_link">About the shelter</a>
+              <a href="index.html#about" class="nav_link">About the shelter</a>
             </li>
             <li class="nav_item">
-              <a href="index.html" class="nav_link">Our pets</a>
+              <a href="index.html#pets" class="nav_link">Our pets</a>
             </li>
             <li class="nav_item">
-              <a href="index.html" class="nav_link">Help the shelter</a>
+              <a href="index.html#help" class="nav_link">Help the shelter</a>
             </li>
             <li class="nav_item">
-              <a href="#contacts" class="nav_link">Contacts</a>
+              <a href="#contacts#contacts" class="nav_link">Contacts</a>
             </li>
           </ul>
         </nav>
+        <div class="overlay"></div>
       </div>
     </div>
   </header>
@@ -50,62 +51,194 @@
             are looking for a house</h1>
           <div class="carusel_wrapper">
             <ul class="carusel">
-              <li class="option">
+              <li class="option" id="katrine">
                 <img src="/imgs/pets-katrine.png" alt="katrine">
                 <h3 class="pet_name">Katrine</h3>
-                <button class="learn_more">Learn more</button>
+                <button class="learn_more" id="katrine">Learn more</button>
               </li>
-              <li class="option">
+              <li class="option" id="jennifer">
                 <img src="/imgs/pets-jennifer.png" alt="jennifer">
                 <h3 class="pet_name">Jennifer</h3>
-                <button class="learn_more">Learn more</button>
+                <button class="learn_more" id="jennifer">Learn more</button>
               </li>
-              <li class="option">
+              <li class="option" id="woody">
                 <img src="/imgs/pets-woody.png" alt="woody">
                 <h3 class="pet_name">Woody</h3>
-                <button class="learn_more">Learn more</button>
+                <button class="learn_more" id="woody">Learn more</button>
               </li>
-              <li class="option">
+              <li class="option" id="sophia">
                 <img src="/imgs/pets-sophia.png" alt="Sophia">
                 <h3 class="pet_name">Sophia</h3>
-                <button class="learn_more">Learn more</button>
+                <button class="learn_more" id="sophia">Learn more</button>
               </li>
-              <li class="option">
+              <li class="option" id="timmy">
                 <img src="/imgs/pets-timmy.png" alt="timmy">
                 <h3 class="pet_name">Timmy</h3>
-                <button class="learn_more">Learn more</button>
+                <button class="learn_more" id="timmy">Learn more</button>
               </li>
-              <li class="option">
+              <li class="option" id="charly">
                 <img src="/imgs/pets-charly.png" alt="charly">
                 <h3 class="pet_name">Charly</h3>
-                <button class="learn_more">Learn more</button>
+                <button class="learn_more" id="charly">Learn more</button>
               </li>
-              <li class="option">
+              <li class="option" id="scarlet">
                 <img src="/imgs/pets-scarlet.png" alt="scarlet">
                 <h3 class="pet_name">Scarlet</h3>
-                <button class="learn_more">Learn more</button>
+                <button class="learn_more" id="scarlet">Learn more</button>
               </li>
-              <li class="option">
+              <li class="option" id="freddie">
                 <img src="/imgs/pets-freddie (1).png" alt="freddie">
                 <h3 class="pet_name">Freddie</h3>
-                <button class="learn_more">Learn more</button>
+                <button class="learn_more" id="freddie">Learn more</button>
               </li>
             </ul>
           </div>
           <div class="arrows_wrapper">
-            <button class="arrow arrow_back">
+            <button class="arrow arrow_back" id="first-page">
               <img src="/imgs/__.png" alt="arrow" class="back">
             </button>
-            <button class="arrow arrow_back">
+            <button class="arrow arrow_back" id="prev-page">
               <img src="/imgs/_.png" alt="arrow" class="back">
             </button>
             <div class="page">1</div>
-            <button class="arrow arrow_next">
+            <button class="arrow arrow_next" id="next-page">
               <img src="/imgs/_.png" alt="arrow">
             </button>
-            <button class="arrow arrow_next">
+            <button class="arrow arrow_next" id="last-page">
               <img src="/imgs/__.png" alt="arrow">
             </button>
+          </div>
+        </div>
+      </div>
+      <div class="info_wrapper">
+        <div class="close_btn">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="info_box">
+          <div class="card_opt" id="katrine">
+            <img src="/imgs/pets-katrine.png" class="opt_pic" alt="katrine">
+            <div class="all_info">
+              <h4 class="name">Katrine</h4>
+              <h5 class="breed">Cat - British Shorthair</h5>
+              <span class="main_info">Katrine is a beautiful girl. She is as soft as the finest velvet with a thick lush fur. Will love you until the last breath she takes as long as you are the one. She is picky about her affection. She loves cuddles and to stretch into your hands for a deeper relaxations..
+              </span>
+              <ul class="other_info">
+                <li> <span class="colortext">Age:</span> 2 years</li> 
+                <li><span class="colortext">Inoculations:</span> none</li>
+                <li><span class="colortext">Diseases:</span> none</li>
+                <li><span class="colortext">Parasites: </span>none</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card_opt" id="jennifer">
+            <img src="/imgs/pets-jennifer.png" class="opt_pic" alt="Jennifer">
+            <div class="all_info">
+              <h4 class="name">Jennifer</h4>
+              <h5 class="breed">Dog - Labrador</h5>
+              <span class="main_info">Jennifer is a sweet 2 months old Labrador
+                 that is patiently waiting to find a new forever home.
+                  This girl really enjoys being able to go outside to run and play,
+                   but won't hesitate to play up a storm in the house if she has all 
+                   of her favorite toys.
+              </span>
+              <ul class="other_info">
+                <li> <span class="colortext">Age:</span> 2 months</li> 
+                <li><span class="colortext">Inoculations:</span> none</li>
+                <li><span class="colortext">Diseases:</span> none</li>
+                <li><span class="colortext">Parasites: </span>none</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card_opt" id="woody">
+            <img src="/imgs/pets-woody.png" class="opt_pic" alt="woody">
+            <div class="all_info">
+              <h4 class="name">Woody</h4>
+              <h5 class="breed">Dog - Golden Retriever</h5>
+              <span class="main_info">Woody is a handsome 3 1/2 year old boy. Woody does know basic commands and is a smart pup. Since he is on the stronger side, he will learn a lot from your training. Woody will be happier when he finds a new family that can spend a lot of time with him.
+              </span>
+              <ul class="other_info">
+                <li> <span class="colortext">Age:</span> 3,5 years</li> 
+                <li><span class="colortext">Inoculations:</span> none</li>
+                <li><span class="colortext">Diseases:</span> none</li>
+                <li><span class="colortext">Parasites: </span>none</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card_opt" id="sophia">
+            <img src="/imgs/pets-sophia.png" class="opt_pic" alt="sophia">
+            <div class="all_info">
+              <h4 class="name">Sophia</h4>
+              <h5 class="breed">Dog - Shih tzu</h5>
+              <span class="main_info">Sophia here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.
+              </span>
+              <ul class="other_info">
+                <li> <span class="colortext">Age:</span> 5 months</li> 
+                <li><span class="colortext">Inoculations:</span> none</li>
+                <li><span class="colortext">Diseases:</span> none</li>
+                <li><span class="colortext">Parasites: </span>none</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card_opt" id="timmy">
+            <img src="/imgs/pets-timmy.png" class="opt_pic" alt="timmy">
+            <div class="all_info">
+              <h4 class="name">Timmy</h4>
+              <h5 class="breed">Cat - British Shorthair</h5>
+              <span class="main_info">Timmy is an adorable grey british shorthair male. He loves to play and snuggle. He is neutered and up to date on age appropriate vaccinations. He can be chatty and enjoys being held. Timmy has a lot to say and wants a person to share his thoughts with.
+              </span>
+              <ul class="other_info">
+                <li> <span class="colortext">Age:</span> 2 months</li> 
+                <li><span class="colortext">Inoculations:</span> none</li>
+                <li><span class="colortext">Diseases:</span> none</li>
+                <li><span class="colortext">Parasites: </span>none</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card_opt" id="charly">
+            <img src="/imgs/pets-charly.png" class="opt_pic" alt="charly">
+            <div class="all_info">
+              <h4 class="name">Charly</h4>
+              <h5 class="breed">Dog - Jack Russell Terrier </h5>
+              <span class="main_info">This cute boy, Charly, is three years old and he likes adults and kids. He isn’t fond of many other dogs, so he might do best in a single dog home. Charly has lots of energy, and loves to run and play. We think a fenced yard would make him very happy.
+              </span>
+              <ul class="other_info">
+                <li> <span class="colortext">Age:</span> 3 years</li> 
+                <li><span class="colortext">Inoculations:</span> none</li>
+                <li><span class="colortext">Diseases:</span> none</li>
+                <li><span class="colortext">Parasites: </span>none</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card_opt" id="scarlet">
+            <img src="/imgs/pets-scarlet.png" class="opt_pic" alt="scarlet">
+            <div class="all_info">
+              <h4 class="name">Scarlett</h4>
+              <h5 class="breed">Dog - Jack Russell Terrier</h5>
+              <span class="main_info">Scarlett is a happy, playful girl who will make you laugh and smile. She forms a bond quickly and will make a loyal companion and a wonderful family dog or a good companion for a single individual too since she likes to hang out and be with her human.
+              </span>
+              <ul class="other_info">
+                <li> <span class="colortext">Age:</span> 8 months</li> 
+                <li><span class="colortext">Inoculations:</span> none</li>
+                <li><span class="colortext">Diseases:</span> none</li>
+                <li><span class="colortext">Parasites: </span>none</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card_opt" id="freddie">
+            <img src="/imgs/pets-freddie (1).png" class="opt_pic" alt="freddie">
+            <div class="all_info">
+              <h4 class="name">Freddie</h4>
+              <h5 class="breed">Cat - British Shorthair</h5>
+              <span class="main_info">Freddie is a little shy at first, but very sweet when he warms up. He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms of his human’s daily life. Freddie has bounced around a lot in his life, and is looking to find his forever home.
+              </span>
+              <ul class="other_info">
+                <li> <span class="colortext">Age:</span> 11 months</li> 
+                <li><span class="colortext">Inoculations:</span> none</li>
+                <li><span class="colortext">Diseases:</span> none</li>
+                <li><span class="colortext">Parasites: </span>none</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -146,6 +279,6 @@
   </footer>
 </div>
   </footer>
-  <script src="script.js"></script>
+  <script src="pets.js"></script>
 </body>
 </html>

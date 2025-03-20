@@ -48,6 +48,9 @@ body{
   margin: 0;
   cursor: default;
 }
+body.no_scroll{
+  overflow: hidden;
+}
 .wall{
   background-image: url(/imgs/noise_transparent.png),
   linear-gradient(to bottom right, rgba(91, 72, 58, 1), rgba(38, 36, 37, 1) );;
@@ -105,6 +108,7 @@ body{
   height: 2px;
   background-color: rgba(241, 205, 179, 1);
   left: 5px;
+  transition: all 0.3s ease;
 }
 .burger span:nth-child(1){
  transform: translateY(-10px);
@@ -149,6 +153,22 @@ body{
 .nav_link:hover{
   border-bottom: solid  3px rgba(241, 205, 179, 1);
 }
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(17, 17, 17, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1;
+}
+.overlay_active{
+  opacity: 1;
+  visibility: visible;
+}
 
 @media(768px <= width < 1280px){
   .header{
@@ -166,19 +186,21 @@ body{
   }
   .burger{
     display: block;
-    z-index: 2;
+    z-index: 3;
     right: 38px;
     top: 10px;
+    transition: all 0.3s;
   }
   .navigation{
-    display: none;
-    position: absolute;
+    position: fixed;
     background-color: rgba(41, 41, 41, 1);
-    right: 0;
+    right: -100%;
     top: 0;
     width: 320px;
     height: 100%;
     padding-top: 220px;
+    transition: 0.3s ease;
+    z-index: 2;
   }
   .nav_list{
     background-color: rgba(41, 41, 41, 1);
@@ -197,17 +219,18 @@ body{
     gap: 8px;
   }
   .logo_description_active{
-    z-index: 2;
+    z-index: 4;
     position: absolute;
     right: 130px;
   }
   .navigation_active{
-    display: block;
+    right: 0;
   }
   .description{
     font-size: 14px;
     letter-spacing: 1px;
   }
+  
 }
 /* header end */
 
@@ -462,6 +485,7 @@ body{
   background: none;
   font-family: "Tinos";
   font-size: 20px;
+  cursor: pointer;
   transition: 0.3s;
 }
 .option:hover .learn_more{
@@ -492,6 +516,7 @@ body{
   border-radius: 100px;
   border: 2px solid rgba(241, 205, 179, 1);
   transition: 0.3s;
+  cursor: pointer;
 }
 .arrow:hover{
   background-color: rgba(241, 205, 179, 1);
@@ -505,6 +530,106 @@ left: 40px;
 }
 .arrow:disabled{
   border-color: rgb(169, 168, 168);
+}
+/* cards */
+.info_wrapper{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 1492px;
+  left: 0;
+  width: 100%;
+  height: 877px;
+  background-color:rgb(17, 17, 17, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.info_open{
+  display: flex;
+}
+.close_btn{
+  position: relative;
+  left: 480px;
+  width: 52px;
+  height: 52px;
+ border: 2px solid rgba(241, 205, 179, 1);
+ border-radius: 100px;
+ cursor: pointer;
+ transition: 0.3s;
+}
+.close_btn:hover{
+  background-color: rgba(241, 205, 179, 1);
+}
+.close_btn span{
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  left: 15px;
+  top: 25px;
+}
+.close_btn span:nth-child(1){
+  transform: rotate(45deg);
+}
+.close_btn span:nth-child(2){
+  transform: rotate(-45deg);
+}
+.info_box{
+  width: 900px;
+  height: 500px;
+  background-color: rgba(250, 250, 250, 1);
+  position: relative;
+  z-index: 3;
+  border-radius: 10px;
+}
+.card_opt{
+ display: none;
+ align-items: flex-start;
+ justify-content: flex-start;
+ gap: 29px;
+}
+.card_opt_open{
+  display: flex;
+}
+.opt_pic{
+  height: 500px;
+  border-radius: 10px;
+}
+.all_info{
+  width: 351px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 58px;
+}
+.name{
+  font-size: 35px;
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+}
+.breed{
+  font-size: 20px;
+  margin-bottom: 44px;
+  letter-spacing: 1.5px;
+}
+.main_info{
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  line-height: 110%;
+  margin-bottom: 35px;
+}
+.other_info{
+ line-height: 176%;
+ list-style-type: disc;
+ margin-left: 16px;
+ letter-spacing: 1.5px;
+}
+.other_info li::marker{
+ color: rgba(241, 205, 179, 1);
+}
+.colortext{
+  font-family: "Tinos", serif;
+  font-weight: 700;
 }
 
 
@@ -520,6 +645,39 @@ left: 40px;
   .carusel{
     gap: 40px;
     max-width: 705px;
+  }
+  /* cards */
+  .info_wrapper{
+    top: 2215px;
+  }
+  .info_box{
+    width: 630px;
+    height: 350px;
+  }
+  .close_btn{
+    left: 340px;
+  }
+  .card_opt{
+    gap: 11px;
+  }
+  .opt_pic{
+    height: 350px;
+  }
+  .all_info{
+    margin-top: 10px;
+  }
+  .name{
+    margin-bottom: 10px;
+  }
+  .breed{
+    margin-bottom: 20px;
+  }
+  .main_info{
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  .other_info{
+    line-height: 140%;
   }
 }
 
@@ -561,6 +719,42 @@ left: 40px;
   .more_pets{
     
     margin-top: -34px;
+  }
+  /* cards */
+  .info_wrapper{
+    height: 795px;
+    top: 1795px;
+  }
+  .info_box{
+    width: 240px;
+    height: 341px;
+  }
+  .close_btn{
+    left: 145px;
+  }
+  .opt_pic{
+    display: none;
+  }
+  .all_info{
+    margin-top: 10px;
+  }
+  .name{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .breed{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .main_info{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 13px;
+    max-width: 220px;
+  }
+  .other_info{
+    line-height: 140%;
+    margin-left: 25px;
   }
 
 }
